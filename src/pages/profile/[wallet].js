@@ -16,7 +16,7 @@ import { IoRefreshOutline } from "react-icons/io5";
 import SearchInput from "@/components/searchbar";
 import PerPageButton from "@/components/perPageButton";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import ConnectModalNonDismissable from "@/components/ConnectModalNonDismissable";
+import ConnectModalNonDismissable from "@/components/connectModalNonDismissable";
 import isWalletConnected from "@/components/isWalletConnected";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -1109,7 +1109,9 @@ export default function Home({ trader, initialLoading, initialError }) {
                   <GoTriangleDown />
                 </div>
               </div>
-              <div className="font-semibold ml-6 w-12 justify-end">Share</div>
+              <div className="font-semibold ml-6 w-12 justify-end  flex items-center">
+                Share
+              </div>
             </div>
           </div>
           {sortedTokens.length > 0 ? (
@@ -1313,7 +1315,9 @@ export default function Home({ trader, initialLoading, initialError }) {
               ))}
             </div>
           ) : (
-            <div className="h-96   text-2xl bg-[#12121c]"></div>
+            <div className="h-96  w-full min-w-[1248px] text-2xl bg-[#12121c]">
+              {" "}
+            </div>
           )}
         </div>
         {/* Pagination */}

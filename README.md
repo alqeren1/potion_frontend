@@ -61,12 +61,13 @@ This project was developed as a submission for the Potion Leaderboard frontend c
    or
    ```bash
    yarn dev
-  ```
-
-  if you want to try the page from your phone in local wifi network:
-  ```bash
-   npm run dev:wifi
    ```
+
+   if you want to try the page from your phone in local wifi network:
+
+  ```bash
+  npm run dev:wifi
+  ```
 
    Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 

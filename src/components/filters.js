@@ -528,7 +528,7 @@ export default function Filters({ onFilterChange }) {
         className={`
     fixed bottom-0 left-0 w-screen h-3/5 rounded-t-2xl md:hidden px-2
     border-[1px] border-[#464558] mt-2 bg-[#1c1b29] 
-    shadow-lg text-white font-semibold text-left transform transition-transform duration-200
+    shadow-lg text-white font-semibold text-left transform transition-transform duration-200 z-[990]
     ${isOpen ? "translate-y-0" : "translate-y-full"}
   `}
         style={{ transformOrigin: "bottom" }}

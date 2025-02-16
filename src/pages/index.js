@@ -935,7 +935,7 @@ export default function Home() {
             })}
           </div>
         ) : (
-          <div className="h-96   text-2xl bg-[#12121c]"></div>
+          <div className="h-96  w-full min-w-full text-2xl bg-[#12121c]"></div>
         )}
       </div>
       {/* Pagination */}
