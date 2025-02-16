@@ -2,6 +2,11 @@
 
 A responsive, interactive single-page application built with React and Next.js that displays a dynamic leaderboard for Solana memecoin traders. The app consumes a mock API to display trader data and includes functionality for filtering, sorting, and searching. Wallet connection is required to unlock the full experience.
 
+## Submission Details
+**Developer:** Joey X  
+**X (Twitter):** [@joeyx_eth](https://twitter.com/joeyx_eth)  
+**Email:** [alqeren1@gmail.com](mailto:alqeren1@gmail.com) 
+
 ## Overview
 
 **Project Purpose:**  
@@ -64,12 +69,12 @@ This project was developed as a submission for the Potion Leaderboard frontend c
    ```
 
    if you want to try the page from your phone in local wifi network:
+  
+   ```bash
+   npm run dev:wifi
+   ```
 
-  ```bash
-  npm run dev:wifi
-  ```
-
-   Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+   Then, open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 ## Testing & Usage
 
@@ -111,16 +116,17 @@ For staging or production, the following steps are recommended:
    npm run build
    ```
    or
-   #########################
+   ```
    yarn build
    ```
 
-2. **Start the production server:**
+3. **Start the production server:**
 
    ```bash
    npm start
-  ```
+   ```
    or
+   
    ```bash
    yarn start
    ```
@@ -128,9 +134,76 @@ For staging or production, the following steps are recommended:
 3. **Deployment Platforms:**  
    You can deploy the application to Vercel, Netlify, or any platform that supports Next.js. The project is configured to work out of the box on Vercel with minimal configuration.
 
+
+### API Response Format
+
+A mock api has been used, random values are generated with this data format, using a seed to generate randomness in order to get consistent random data. 
+
+**Endpoint:** `GET /api/main`
+
+**Response Structure:**
+```json
+{
+  "traders": [
+    {
+      "profilePhoto": "string (image path)",
+      "followers": "number",
+      "twitterHandle": "string",
+      "traderName": "string",
+      "traderWallet": "string (Solana address)",
+      "tradeTime": "number (minutes ago)",
+      "timeframes": {
+        "daily": {
+          "tokens": "number",
+          "winRate": "number (%)",
+          "winningTrades": "number",
+          "losingTrades": "number",
+          "avgBuySol": "number (SOL)",
+          "avgEntry": "number (market cap)",
+          "avgHoldMinutes": "number",
+          "realizedPnlSol": "number (SOL)",
+          "totalInvested": "number (SOL)"
+        },
+        "weekly": { /* same structure as daily */ },
+        "monthly": { /* same structure as daily */ },
+        "allTime": { /* same structure as daily */ }
+      },
+      "tokens": {
+        "daily": [
+          {
+            "tokenPicture": "string (image path)",
+            "tokenName": "string",
+            "tokenAddress": "string (Solana address)",
+            "tradeTime": "number (minutes ago)",
+            "marketCap": "number",
+            "invested": "number (SOL)",
+            "realizedPnlSol": "number (SOL)",
+            "buyTransactions": "number",
+            "sellTransactions": "number",
+            "holding": "number (SOL)",
+            "avgBuy": "number (price)",
+            "avgSell": "number (price)",
+            "held": "number (minutes)"
+          }
+        ],
+        "weekly": [ /* same token structure */ ],
+        "monthly": [ /* same token structure */ ],
+        "allTime": [ /* same token structure */ ]
+      }
+    }
+    // ... (other traders)
+  ]
+}
+
+```
+
+
 ## Live Demo
 
 A live demo is available [here](https://<your-demo-url>).  
 (Replace with your actual deployed demo URL.)
+
+
+
 
 
