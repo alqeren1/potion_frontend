@@ -117,7 +117,7 @@ export default function SettingsMenu({
             <a target="_blank" href="https://x.com/potionalpha">
               <img
                 className=""
-                src="/x_logo.svg"
+                src="/X_logo.svg"
                 alt="x logo"
                 width={30}
                 height={24}
