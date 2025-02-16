@@ -26,9 +26,10 @@ export async function getServerSideProps({ params }) {
     const { wallet } = params;
     // Start loading state
     const initialLoading = true;
-    const baseUrl = process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : "http://localhost:3000";
+    const baseUrl =
+      process.env.NODE_ENV === "production"
+        ? "https://potion-frontend-sigma.vercel.app"
+        : "http://localhost:3000";
     // Fetch all trader data from your API
     const res = await fetch(`${baseUrl}/api/main?wallet=${wallet}`);
 
