@@ -27,7 +27,7 @@ export async function getServerSideProps({ params }) {
     // Start loading state
     const initialLoading = true;
     // Fetch all trader data from your API
-    const res = await fetch(`http://localhost:3000/api/main?wallet=${wallet}`);
+    const res = await fetch(`/api/main?wallet=${wallet}`);
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
