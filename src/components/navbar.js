@@ -119,7 +119,7 @@ export default function Navbar({ menuOpen, setMenuOpen, hamburgerRef }) {
           <a target="_blank" href="https://x.com/potionalpha">
             <Image
               className=""
-              src="/x_logo.svg"
+              src="/X_logo.svg"
               alt="x logo"
               width={22}
               height={24}
