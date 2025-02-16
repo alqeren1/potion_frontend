@@ -34,6 +34,9 @@ This project was developed as a submission for the Potion Leaderboard frontend c
 - **Pagination:**  
   Provides pagination controls to navigate through trader listings.
 
+- **Trader Page:**  
+  When you click on a trader from the leaderboard, that trader's profile comes up, with the required information.
+
 ## Installation
 
 1. **Clone the repository:**
