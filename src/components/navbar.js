@@ -163,7 +163,7 @@ export default function Navbar({ menuOpen, setMenuOpen, hamburgerRef }) {
         {!walletConnected && showModal && (
           <div
             className={`flex justify-center  lg:mr-0 ${
-              menuOpen ? "mr-[64px]" : "mr-4"
+              menuOpen ? "mr-[52px] sm:mr-[64px]" : "mr-1 sm:mr-4"
             }`}
           >
             <button
@@ -175,7 +175,14 @@ export default function Navbar({ menuOpen, setMenuOpen, hamburgerRef }) {
               }`}
               disabled={!hasPhantom}
             >
-              {hasPhantom ? "Connect" : "No Phantom Wallet"}
+              {hasPhantom ? (
+                "Connect"
+              ) : (
+                <div>
+                  <div className="hidden sm:flex">No Phantom Wallet</div>
+                  <div className="flex text-sm sm:hidden">No Wallet</div>
+                </div>
+              )}
             </button>
           </div>
         )}
