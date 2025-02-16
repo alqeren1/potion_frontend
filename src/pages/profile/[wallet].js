@@ -26,8 +26,11 @@ export async function getServerSideProps({ params }) {
     const { wallet } = params;
     // Start loading state
     const initialLoading = true;
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000";
     // Fetch all trader data from your API
-    const res = await fetch(`/api/main?wallet=${wallet}`);
+    const res = await fetch(`${baseUrl}/api/main?wallet=${wallet}`);
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
