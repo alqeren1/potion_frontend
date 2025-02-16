@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sora: 'Sora', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sora), Arial, Helvetica, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  display: block;
+}
+
+/* Remove scrollbar buttons (arrows) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+.custom-scrollbar {
+  -ms-overflow-style: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #646464 transparent;
+}
+
+/* Track styling */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 8px;
+}
+
+/* Thumb styling - rounded edges */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #646464;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+/* Firefox specific */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #646464 transparent;
+}
+
+@keyframes spin-faster {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* A utility class that applies the faster spin infinitely */
+.spin-faster {
+  animation: spin-faster 0.5s linear infinite;
+  transform-origin: center; /* ensures spinning around the center */
+}
+
+
+input::placeholder {
+  font-weight: 300; /* Light font weight */
+  opacity: 0.5;
+}
+
+/* Vendor prefixes for broader browser support */
+input::-webkit-input-placeholder {
+  font-weight: 300;
+  opacity: 0.5;
+}
+input:-moz-placeholder {
+  font-weight: 300;
+  opacity: 0.5;
+}
+input::-moz-placeholder {
+  font-weight: 300;
+  opacity: 0.5;
+}
+input:-ms-input-placeholder {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes loading-bar {
+  0% { width: 0%; opacity: 0.5; }
+  50% { width: 70%; opacity: 1; }
+  100% { width: 100%; opacity: 0.5; }
+}
+
+.loading-bar-animation {
+  animation: loading-bar 10s ease-in-out infinite;
+}
