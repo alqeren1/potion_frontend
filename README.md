@@ -7,6 +7,10 @@ A responsive, interactive single-page application built with React and Next.js t
 **X (Twitter):** [@joeyx_eth](https://twitter.com/joeyx_eth)  
 **Email:** [alqeren1@gmail.com](mailto:alqeren1@gmail.com) 
 
+## Live Demo
+
+A live demo is available [here](https://potion-frontend-sigma.vercel.app/). 
+
 ## Overview
 
 **Project Purpose:**  
@@ -201,10 +205,8 @@ A mock api has been used, random values are generated with this data format, usi
 ```
 
 
-## Live Demo
+ 
 
-A live demo is available [here](https://<your-demo-url>).  
-(Replace with your actual deployed demo URL.)
 
 
 
