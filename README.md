@@ -1,11 +1,27 @@
-# Potion Leaderboard
+# Potion Leaderboard Frontend Challenge (Winner)
+<p align="center">
+  <img src="public/favicon.ico" alt="Waterup Logo" width="200">
+</p>
 
-A responsive, interactive single-page application built with React and Next.js that displays a dynamic leaderboard for Solana memecoin traders. The app consumes a mock API to display trader data and includes functionality for filtering, sorting, and searching. Wallet connection is required to unlock the full experience.
+This repository contains my **winning submission** for the Potion Leaderboard Frontend Challenge, a competitive project that required building a dynamic, responsive leaderboard for Solana memecoin traders. The challenge called for replicating high-fidelity Figma designs while incorporating essential UI interactions such as search, filtering, and sorting, along with wallet connection functionality to unlock advanced features.
 
-## Submission Details
-**Developer:** Joey X  
-**X (Twitter):** [@joeyx_eth](https://twitter.com/joeyx_eth)  
-**Email:** [alqeren1@gmail.com](mailto:alqeren1@gmail.com) 
+A responsive, interactive single-page application has been built with React and Next.js that displays a dynamic leaderboard for Solana memecoin traders. The app consumes a mock API to display trader data and includes functionality for filtering, sorting, and searching. 
+
+
+
+## Challenge Overview:
+[Challenge details](https://docs.potionvision.com/frontend-developer-challenge-2025-02)
+- **Objective:** Develop a single-page application that fetches trader data from a mock API and displays it in an interactive, responsive leaderboard.
+- **Key Requirements:**
+  - Accurately replicate the provided Figma designs with improvements for responsiveness and usability.
+  - Implement sorting, pagination, and a dynamic search bar to filter by wallet address or X account handle.
+  - Enable wallet connection to provide full functionality and access to trader profiles.
+- **Outcome:** The project not only met but exceeded the challenge criteria, delivering a robust and visually compelling solution that earned the top prize.
+
+
+
+**Developer:** [alqeren1](https://github.com/alqeren1)  
+**Email:** [alqeren1@gmail.com](mailto:alqeren1@gmail.com)
 
 ## Live Demo
 
@@ -46,8 +62,8 @@ This project was developed as a submission for the Potion Leaderboard frontend c
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/alqeren1/potion_frontend.git
-   cd potion_frontend
+   git clone https://github.com/alqeren1/potion_frontend_challenge.git
+   cd potion_frontend_challenge
    ```
 
 2. **Install dependencies:**
