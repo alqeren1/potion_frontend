@@ -1,6 +1,6 @@
 # Potion Leaderboard Frontend Challenge (Winner)
 <p align="center">
-  <img src="public/favicon.ico" alt="Waterup Logo" width="200">
+  <img src="public/favicon.ico" alt="Potion Logo" width="200">
 </p>
 
 This repository contains my **winning submission** for the Potion Leaderboard Frontend Challenge, a competitive project that required building a dynamic, responsive leaderboard for Solana memecoin traders. The challenge called for replicating high-fidelity Figma designs while incorporating essential UI interactions such as search, filtering, and sorting, along with wallet connection functionality to unlock advanced features.
